@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'AI Mock Interview Platform API is running! 🚀';
+    return 'PrepPilot API is running! 🚀';
   }
 
   getHealth(): { status: string; timestamp: string } {

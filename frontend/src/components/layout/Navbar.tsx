@@ -99,7 +99,7 @@ export const Navbar: React.FC = () => {
             <Zap className="w-4 h-4 fill-white" />
           </div>
           <span className="font-bold text-[rgb(var(--text-primary))] group-hover:text-violet-400 transition-colors">
-            InterviewAI
+            PrepPilot
           </span>
         </Link>
 

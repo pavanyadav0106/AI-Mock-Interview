@@ -53,7 +53,7 @@ export const Login: React.FC = () => {
             <Zap className="w-8 h-8 fill-white" />
           </div>
           <h2 className="text-3xl font-black text-[rgb(var(--text-primary))]">
-            Welcome back to <span className="gradient-text">InterviewAI</span>
+            Welcome back to <span className="gradient-text">PrepPilot</span>
           </h2>
           <p className="text-[rgb(var(--text-secondary))] leading-relaxed">
             Continue your journey to interview mastery with AI-powered practice sessions.
@@ -65,7 +65,7 @@ export const Login: React.FC = () => {
           </div>
         </div>
       </div>
-
+ 
       {/* Right panel — form */}
       <div className="flex-1 flex items-center justify-center p-6 lg:p-12">
         <div className="w-full max-w-md space-y-8 animate-fade-in-up">
@@ -77,7 +77,7 @@ export const Login: React.FC = () => {
             >
               <Zap className="w-6 h-6 fill-white" />
             </div>
-            <h1 className="text-2xl font-black gradient-text">InterviewAI</h1>
+            <h1 className="text-2xl font-black gradient-text">PrepPilot</h1>
           </div>
 
           <div>
