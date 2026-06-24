@@ -262,3 +262,18 @@
 .delay-300 { animation-delay: 0.3s; }
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
+
+/* Autofill overrides to match dark/light theme background and text color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgb(var(--text-primary)) !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(var(--bg-secondary)) inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
