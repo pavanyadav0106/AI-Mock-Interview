@@ -177,14 +177,15 @@ ${guide}
 
 RULES:
 1. Carefully analyze the job description to identify: required skills, technologies, responsibilities, and qualifications.
-2. Generate questions that directly test the skills and knowledge mentioned in the job description.
-3. Cover different aspects of the JD — don't focus on just one technology or requirement.
-4. Questions must be practical and make the candidate genuinely interview-ready for THIS specific position.
-5. Do NOT reference specific company names from the JD.
-6. Questions should be clear, specific, and self-contained.
-7. Return ONLY the question text as plain strings. No numbering, no prefixes, no metadata.
-8. Randomness seed for variety: ${seed}
-9. STRICT LENGTH LIMITS:
+2. Generate direct, realistic questions that test core concepts, troubleshooting, syntax, and architecture.
+3. Do NOT make every question a hypothetical scenario (avoid starting every question with "Imagine you are...", "A company is...", or "You are tasked with..."). Use a mix of direct/conceptual questions (e.g. "What is X?", "Explain how Y works") and practical troubleshooting/design questions.
+4. Cover different aspects of the JD — don't focus on just one technology or requirement.
+5. Questions must be practical and make the candidate genuinely interview-ready for THIS specific position.
+6. Do NOT reference specific company names from the JD.
+7. Questions should be clear, specific, and self-contained.
+8. Return ONLY the question text as plain strings. No numbering, no prefixes, no metadata.
+9. Randomness seed for variety: ${seed}
+10. STRICT LENGTH LIMITS:
    - For Easy: Keep each question to a single simple sentence (max 15 words).
    - For Medium: Keep each question to max 2 sentences (max 25 words).
    - For Hard: Keep each question to max 3 sentences (max 45 words).
@@ -198,13 +199,13 @@ DIFFICULTY:
 ${guide}
 
 RULES:
-1. Questions must make the candidate genuinely interview-ready — focus on skills, knowledge, and problem-solving that real interviews test.
-2. Do NOT reference specific company names (no "Google-style", "asked at Meta", etc.).
-3. Every question must be DIFFERENT from common/overused interview questions. Be creative and varied — cover different sub-topics within ${role} development.
-4. Questions should be clear, specific, and self-contained (no follow-ups needed to understand them).
-5. Return ONLY the question text as plain strings. No numbering, no prefixes, no metadata.
-6. Randomness seed for variety: ${seed}
-7. STRICT LENGTH LIMITS:
+1. Generate direct, realistic questions that test core concepts, troubleshooting, syntax, and architecture that real interviewers ask.
+2. Do NOT make every question a hypothetical scenario (avoid starting every question with "Imagine you are...", "A company is...", or "You are tasked with..."). Use a mix of direct/conceptual questions (e.g. "What is X?", "Explain how Y works") and practical troubleshooting/design questions.
+4. Be creative and varied — cover different sub-topics within ${role} development.
+5. Questions should be clear, specific, and self-contained (no follow-ups needed to understand them).
+6. Return ONLY the question text as plain strings. No numbering, no prefixes, no metadata.
+7. Randomness seed for variety: ${seed}
+8. STRICT LENGTH LIMITS:
    - For Easy: Keep each question to a single simple sentence (max 15 words).
    - For Medium: Keep each question to max 2 sentences (max 25 words).
    - For Hard: Keep each question to max 3 sentences (max 45 words).
