@@ -450,9 +450,9 @@ Be honest, constructive, and specific. Don't use generic advice — reference sp
 
         For each question:
         1. Provide a fair, precise score (0 to 10) from an interviewer's perspective.
-        2. Provide a detailed, thorough explanation of the strengths of the candidate's answer.
-        3. Provide a detailed, thorough explanation of the weaknesses or missing concepts in the candidate's answer.
-        4. For the ideal answer, draft a comprehensive, step-by-step reference answer explaining the key concepts, technical terminology, and best practices expected of a senior-level professional. Include concrete examples where helpful.
+        2. Provide 2-3 concise, high-impact strengths of the candidate's answer. Keep each strength short and to the point (maximum 15 words).
+        3. Provide 2-3 concise, high-impact weaknesses or missing key concepts in the candidate's answer. Keep each weakness short and to the point (maximum 15 words).
+        4. For the ideal answer, draft a concise reference answer (maximum 3 sentences) explaining the key expected concept and a best practice.
       `;
 
       const result = await model.generateContent({
@@ -471,16 +471,16 @@ Be honest, constructive, and specific. Don't use generic advice — reference sp
                 strengths: {
                   type: SchemaType.ARRAY,
                   items: { type: SchemaType.STRING },
-                  description: 'Detailed points of strength in the answer (provide thorough, constructive bullet points).',
+                  description: 'Concise points of strength in the answer (max 3 items, each max 15 words, focusing only on key positives).',
                 },
                 weaknesses: {
                   type: SchemaType.ARRAY,
                   items: { type: SchemaType.STRING },
-                  description: 'Detailed points of weaknesses, missing knowledge, or areas for improvement (provide thorough, constructive bullet points).',
+                  description: 'Concise points of weaknesses or missing knowledge in the answer (max 3 items, each max 15 words, focusing on high-impact gaps).',
                 },
                 idealAnswer: {
                   type: SchemaType.STRING,
-                  description: 'A comprehensive, detailed ideal answer that covers all expected concepts, best practices, technical details, and potential code syntax or structure.',
+                  description: 'A concise reference answer of 2-3 sentences highlighting core concepts and best practices.',
                 },
               },
               required: ['score', 'strengths', 'weaknesses', 'idealAnswer'],
